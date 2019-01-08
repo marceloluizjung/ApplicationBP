@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+    <title>Breaking Pizza - Your Happiness</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link rel="stylesheet" href="css/styleRefer.css">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nothing+You+Could+Do" rel="stylesheet">
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">  
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">   
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">  
+</head>
+
+<body>
+
+  	<!-- Start nav -->
+	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+	    <div class="container">
+		    <a class="navbar-brand" href="index.html"><span class="flaticon-pizza mr-1"></span>Breaking Pizza<br><small style="margin-left: 30px;">Your Happiness</small></a>
+		    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="oi oi-menu"></span> Menu
+		    </button>
+			<div class="collapse navbar-collapse" id="ftco-nav">
+				<ul class="navbar-nav ml-auto">
+				  <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+				  <li class="nav-item active"><a href="menu.html" class="nav-link">Menu</a></li>
+				  <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+				  <li class="nav-item"><a href="cart.html" class="nav-link">Cart</a></li>
+				  <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+				  <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+    <!-- END nav -->
+ 
+	<!--Start Indication Menu-->
+     	<div class="container" style="margin-top: 40px;">
+			<div class="row justify-content-center mb-5 pb-3">
+				<div class="col-md-7 heading-section ftco-animate text-center">
+					<a class="navbar-brand" style="font-size: 40px;"><span class="flaticon-pizza mr-1" style="font-size: 40px;"></span>Breaking Menu<br><small style="margin-left: 30px;"></small></a>
+					<p style="font-size: 25px;">Pizzas and Soda</p>
+				</div>
+			</div>
+    	</div>
+	<!--End Indication Menu-->
+	
+	<!--START SIDEBAR-->
+	<div id="container" style="width: 300px; position: absolute; top: 210px;">
+		<div id="wrapper">
+			<div id="checkout" style="top: 50px;" class="btn btn-primary" data-toggle="modal" data-target="#modalCart">
+				CHECKOUT	
+			</div>
+			<div id="sidebar">
+				<h3>CART</h3>
+				<div id="cart">
+					<span class="empty">No items in cart.</span>       
+				</div>				
+				<div style="top: 50px;">
+					<label>Total cost: US$</label>
+					<label id="resultado">0.00</label>	
+				</div>  			
+			</div>
+		</div>
+	</div>
+	<!--END SIDEBAR-->
+
+	<!-- Start Modal: modalCart -->
+	<div class="modal fade" id="modalCart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				
+				<!--Header-->
+				<div class="modal-header">
+					<h4 class="modal-title" id="myModalLabel">Your cart</h4>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					  <span aria-hidden="true">×</span>
+					</button>
+				</div>
+				
+				<!--Body-->
+				<div class="modal-body">
+					<label>Total cost: US$</label>
+					<label id="resultadoModal"> </label>		
+					
+					<!--Validation Adress--> 
+					<form>
+						<div class="form-row">					
+							<div class="col-md-3 mb-3">
+								<label for="validationServer034">Id</label>
+								<input type="text" class="form-control is-invalid" id="validationServer034" placeholder="Id"
+									required>
+								<div class="invalid-feedback">	
+								</div>
+							</div>	
+						</div>	
+						<div class="form-group">
+							<div class="custom-control custom-checkbox">
+								<input type="checkbox" class="custom-control-input is-invalid" id="invalidCheck33" required>
+								<label class="custom-control-label" for="invalidCheck33">Agree to terms and conditions</label>
+								<div class="invalid-feedback">
+									You must agree before submitting.
+								</div>
+							</div>
+						</div>	
+						<a href="register.html" style="color:#000">Are you not registered? Click here to register!<a>
+					</form>
+				</div>				
+				<!--END Validation Adress-->
+				
+				<!--Footer-->
+				<div class="modal-footer">
+					<button type="button" class="btn btn-outline-primary" data-dismiss="modal">Close</button>
+					<button class="btn btn-primary">Finish order</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Modal: modalCart -->
+	
+ 	<!--START LIST PIZZA-->
+	<div id="container" style="position: absolute; width: 1000px; left: 300px; top: 250px;">       
+			
+		<div class="product">
+			<div class="make3D">
+				<div class="product-front">
+					<div class="shadow"></div>
+					<img src="images/pizza-5.jpg" alt="" />
+					<div class="image_overlay"></div>												
+					<button class="add_to_cart" type="submit" value="10" onclick="calcular(this.value)">Add to cart</button>
+					
+					<div class="stats">        	
+						<div class="stats-container">
+							<span class="product_price">US$10.00</span>
+							
+							
+							
+							<span class="product_name">PIZZA 01</span>    
+							<p>Pizza</p>                                            
+							
+							<div class="product-options">
+								<strong>SIZES</strong>
+								<span>PP, P, M, G, GG</span>
+							</div>                       
+						</div>                         
+					</div>
+				</div>	  
+			</div>	
+		</div>
+			
+		<div class="product">
+			<div class="make3D">
+				<div class="product-front">
+					<div class="shadow"></div>
+					<img src="images/pizza-7.jpg" alt="" />
+					<div class="image_overlay"></div>
+					
+					<button class="add_to_cart" type="submit" value="20" onclick="calcular(this.value)">Add to cart</button>
+					
+					<div class="stats">        	
+						<div class="stats-container">
+							<span class="product_price">US$20.00</span>
+							<span class="product_name">PIZZA 02</span>    
+							<p>Pizza</p>                                            
+							
+							<div class="product-options">
+								<strong>SIZES</strong>
+								<span>PP, P, M, G, GG</span>
+							</div>                       
+						</div>                         
+					</div>
+				</div>
+			</div>	
+		</div>
+		
+		<div class="product">
+			<div class="make3D">
+				<div class="product-front">
+					<div class="shadow"></div>
+					<img src="images/pizza-8.jpg" alt="" />
+					<div class="image_overlay"></div>
+					
+					<button class="add_to_cart" type="submit" value="30" onclick="calcular(this.value)">Add to cart</button>
+					
+					<div class="stats">        	
+						<div class="stats-container">
+							<span class="product_price">US$30.00</span>
+							<span class="product_name">PIZZA 03</span>    
+							<p>Pizza</p>                                            
+							
+							<div class="product-options">
+								<strong>SIZES</strong>
+								<span>PP, P, M, G, GG</span>
+							</div>                       
+						</div>                         
+					</div>
+				</div>  
+			</div>	
+		</div> 
+	</div> 	
+	<!--END LIST PIZZA-->
+	
+	<!--Start LIST Soda-->
+	<div id="container" style="position: absolute; width: 1000px; left: 300px; top: 650px;">		
+		<div class="product">
+			<div class="make3D">
+				<div class="product-front">
+					<div class="shadow"></div>
+					<img src="images/drink-5.jpg" alt="" />
+					<div class="image_overlay"></div>
+					
+					<button class="add_to_cart" type="submit" value="10" onclick="calcular(this.value)">Add to cart</button>
+					
+					<div class="stats">        	
+						<div class="stats-container">
+							<span class="product_price">US$10.00</span>
+							<span class="product_name">SODA 01</span>    
+							<p>Soda</p>                                            
+							
+							<div class="product-options">
+								<strong>SIZES</strong>
+								<span>PP, P, M, G, GG</span>
+							</div>                       
+						</div>                         
+					</div>
+				</div>  
+			</div>	
+		</div> 
+		
+		<div class="product">
+			<div class="make3D">
+				<div class="product-front">
+					<div class="shadow"></div>
+					<img src="images/drink-7.jpg" alt="" />
+					<div class="image_overlay"></div>					
+					<button class="add_to_cart" type="submit" value="20" onclick="calcular(this.value)">Add to cart</button>
+					
+					<div class="stats">        	
+						<div class="stats-container">
+							<span class="product_price">US$20.00</span>
+							<span class="product_name">SODA 02</span>    
+							<p>Soda</p>                                            
+							
+							<div class="product-options">
+								<strong>SIZES</strong>
+								<span>PP, P, M, G, GG</span>
+							</div>                       
+						</div>                         
+					</div>
+				</div>  
+			</div>	
+		</div> 	
+
+		<div class="product">
+			<div class="make3D">
+				<div class="product-front">
+					<div class="shadow"></div>
+					<img src="images/drink-8.jpg" alt="" />
+					<div class="image_overlay"></div>				
+					<button class="add_to_cart" type="submit" value="30" onclick="calcular(this.value)">Add to cart</button>
+					
+					<div class="stats">        	
+						<div class="stats-container">
+							<span class="product_price">US$30.00</span>
+							<span class="product_name">SODA 03</span>    
+							<p>Soda</p>                                            
+							
+							<div class="product-options">
+								<strong>SIZES</strong>
+								<span>PP, P, M, G, GG</span>
+							</div>                       
+						</div>                         
+					</div>
+				</div>  
+			</div>	
+		</div> 
+	</div>
+ 	<!--END LIST PIZZA-->
+
+	<!--Footer-->
+	<footer class="ftco-footer ftco-section img" style="top: 850px;">
+    	<div class="overlay"></div>
+		<div class="container">
+			<div class="row mb-5">
+			  <div class="col-lg-3 col-md-6 mb-5 mb-md-5">
+				<div class="ftco-footer-widget mb-4">
+					<ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5" style="margin-left: 455px;width: 250px;">
+						<li class="ftco-animate"><a href="https://www.linkedin.com/in/marcelo-luiz-jung-5443ab121/"><span class="icon-twitter"></span></a></li>
+						<li class="ftco-animate"><a href="https://www.linkedin.com/in/marcelo-luiz-jung-5443ab121/"><span class="icon-facebook"></span></a></li>
+						<li class="ftco-animate"><a href="https://www.linkedin.com/in/marcelo-luiz-jung-5443ab121/"><span class="icon-instagram"></span></a></li>
+					</ul>
+				</div>
+			  </div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<p>Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | By Marcelo Luiz Jung </p>
+				</div>
+			</div>
+		</div>
+    </footer>   
+   <!--End Footer--> 
+
+  	<script> 
+	var n1 = 0.00;
+	var n2 = 0.00;
+	var resultadoModal = 10.00;
+	
+	function calcular(value) {
+	n1 = parseInt(value);
+	n2 = n2 + n1;
+	document.getElementById('resultado').innerHTML = n2.toFixed(2);
+	document.getElementById('resultadoModal').innerHTML = n2.toFixed(2);
+	}
+	
+	function recalcular(value) {
+	n1 = parseInt(value);
+	n2 = n2 - n1;
+	document.getElementById('resultado').innerHTML = n2.toFixed(2);
+	}		
+	</script>  
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery-migrate-3.0.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="js/jquery.stellar.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/aos.js"></script>
+	<script src="js/jquery.animateNumber.min.js"></script>
+	<script src="js/bootstrap-datepicker.js"></script>
+	<script src="js/jquery.timepicker.min.js"></script>
+	<script src="js/scrollax.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+	<script src="js/google-map.js"></script>
+	<script src="js/main.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="menu.js"></script>
+    <script  src="js/index.js"></script>
+
+</body>
+
+</html>
